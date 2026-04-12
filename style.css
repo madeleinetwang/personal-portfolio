@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'EB Garamond', Georgia, serif;
+  font-size: 1rem;
+  color: #141008;
+  background-color: #e8e1cf;
+  line-height: 1.65;
+}
+
+/* ── Header ── */
+header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 1.1rem 1.5rem;
+  border-bottom: 1px solid #141008;
+}
+
+.name {
+  font-size: 0.72rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
+
+nav {
+  display: flex;
+  gap: 2rem;
+}
+
+nav a {
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #141008;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* ── Horse ── */
+.horse-wrap {
+  display: flex;
+  justify-content: center;
+  padding: 1.0rem 0 0rem;
+}
+
+.horse {
+  width: 220px;
+  mix-blend-mode: multiply;
+  opacity: 0.82;
+}
+
+/* ── Main ── */
+main {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 0 1.5rem 5rem;
+}
+
+section {
+  padding: 3.5rem 0;
+  border-bottom: 1px solid #b0a48e;
+}
+
+section:last-child {
+  border-bottom: none;
+}
+
+/* ── Type ── */
+.label {
+  display: block;
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  color: #7a6f5a;
+  margin-bottom: 0.4rem;
+}
+
+h1 {
+  font-size: 1.85rem;
+  font-weight: 400;
+  font-style: italic;
+  margin-bottom: 1.25rem;
+  line-height: 1.15;
+}
+
+p {
+  font-size: 1rem;
+  color: #2a2215;
+  max-width: 55ch;
+}
+
+a {
+  color: #141008;
+  text-underline-offset: 3px;
+}
+
+a:hover {
+  opacity: 0.55;
+}
+
+/* ── Projects table ── */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0.25rem;
+}
+
+tr {
+  border-bottom: 1px solid #b0a48e;
+}
+
+tr:last-child {
+  border-bottom: none;
+}
+
+td {
+  padding: 0.75rem 0;
+  font-size: 0.97rem;
+  vertical-align: top;
+  color: #2a2215;
+}
+
+.project-name {
+  width: 30%;
+  padding-right: 2rem;
+  font-style: italic;
+  white-space: nowrap;
+}

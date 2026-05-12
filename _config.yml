@@ -1,0 +1,22 @@
+title: madeleine wang
+description: personal site
+url: ""
+baseurl: ""
+
+permalink: /writing/:slug/
+
+collections:
+  posts:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock

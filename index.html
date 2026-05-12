@@ -15,7 +15,15 @@
 
     <section id="about">
       <h1>about</h1>
-      <p>hey! i'm madeleine wang, a data engineer based in southern california. (data scientist by training from uc berkeley)</p>
+      <div class="about-body">
+        <img src="headshot.jpg" alt="madeleine wang" class="headshot">
+        <div class="about-text">
+          <p>hey! i'm madeleine wang, a data engineer and ml researcher based in southern california. i work at capital group as a data engineer and i'm pursuing an m.s. in statistics (data science) at stanford. i studied data science at uc berkeley (regents' & chancellor's scholar).</p>
+          <p>my work sits at the intersection of developer experience and ai. i care deeply about how ai systems are designed so that humans can trust, understand, and safely rely on them. at capital group i've built ai-assisted developer workflows and authored a technical critique of our org-wide ai skill architecture that was adopted as the basis for a full redesign. getting that right (the ergonomics, the transparency, the guardrails) is what i find most interesting about building with ai.</p>
+          <p>i'm particularly drawn to questions about how ai tools shape the behavior and judgment of the people who use them, and what good human-ai collaboration looks like in high-stakes environments. i think carefully-designed developer experience is an underrated lever for alignment: if a system makes the safe, correct action the easy one, you've already done a lot of the work.</p>
+          <p>find me on <a href="https://linkedin.com/in/madeleine--wang">linkedin</a> or <a href="https://github.com/madeleinetwang">github</a>, or reach out at <a href="mailto:madeleinetwang@gmail.com">madeleinetwang@gmail.com</a>.</p>
+        </div>
+      </div>
     </section>
 
     <section id="projects">
@@ -23,16 +31,20 @@
       <table>
         <tbody>
           <tr>
-            <td class="project-name">Project One</td>
-            <td class="project-desc">Short description of the project.</td>
+            <td class="project-name">generative music modeling</td>
+            <td class="project-desc">built and trained transformer + bert models for chord progression prediction; deployed as a working songwriting assistant tool. supervised by chris donahue (google brain), 2022-2023.</td>
           </tr>
           <tr>
-            <td class="project-name">Project Two</td>
-            <td class="project-desc">Short description of the project.</td>
+            <td class="project-name">nih grant clustering pipeline</td>
+            <td class="project-desc">k-means + pca pipeline to cluster ninds research grants into thematic groups, with interactive visualizations to surface funding gaps and redundancies for program directors. nih ninds research fellow, 2022.</td>
           </tr>
           <tr>
-            <td class="project-name">Project Three</td>
-            <td class="project-desc">Short description of the project.</td>
+            <td class="project-name">customer lifetime value model</td>
+            <td class="project-desc">gradient boosted trees + fine-tuned bert embeddings for behavioral sequence modeling; outputs fed into a targeted marketing campaign that increased revenue by 25% and customer engagement by 15%. built at ariat international, 2023.</td>
+          </tr>
+          <tr>
+            <td class="project-name">federated dbt data model system</td>
+            <td class="project-desc">designed a cross-team data modeling system using dbt loom and defer so teams can run isolated pipeline executions against live upstream data, eliminating a critical single point of failure in cross-team dependencies. capital group, 2024-present.</td>
           </tr>
         </tbody>
       </table>

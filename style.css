@@ -153,5 +153,10 @@ td {
   width: 30%;
   padding-right: 2rem;
   font-style: italic;
-  white-space: nowrap;
+}
+
+.project-link {
+  text-decoration: none;
+  font-style: normal;
+  margin-left: 0.1em;
 }

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Personal Math Tutor — Madeleine Wang</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <a href="../index.html">About Me</a>
+      <a href="../projects.html" aria-current="page">Projects</a>
+    </nav>
+  </header>
+
+  <main>
+    <p class="back"><a href="../projects.html">← Projects</a></p>
+    <h1 class="post-title">My Personal Math Tutor</h1>
+    <p class="post-meta">Sharing a tool I built to help my learning journey.</p>
+    <div class="post-body">
+
+      <h2>The process</h2>
+      <p>I was scrolling through my timeline and saw this:</p>
+
+      <figure class="shot shot--narrow">
+        <a href="https://x.com/noahlt/status/2108675665373589841"><img src="img/math-reader/noahlt-tweet.png" alt="A post on X from Noah Tye (@noahlt): 'Lately I've been learning math with ChatGPT (Astra) as my tutor, using this document scanning camera and a vibecoded tool that pastes the captured image right into the chat. This way, I just work problems on paper and ChatGPT gives feedback. It's really nice.' The photo shows a laptop next to a document camera pointed at a notebook of handwritten math." width="408" height="478" loading="lazy"></a>
+        <figcaption><a href="https://x.com/noahlt/status/2108675665373589841">@noahlt on X</a></figcaption>
+      </figure>
+
+      <p>I took the idea and turned it into my own workflow for studying. I do all my math by hand in GoodNotes on my iPad, so my loop looked like this:</p>
+      <ol>
+        <li>Take notes or work a problem.</li>
+        <li>Get stuck, then screenshot the page.</li>
+        <li>Send the screenshot to Claude and type out my question.</li>
+        <li>Go back to my notes and write down whatever Claude said.</li>
+      </ol>
+      <p>This process was cumbersome. Every question I had meant leaving my notes and getting distracted by the multi-step process.</p>
+      <p>I built this small, quick tool to solve it! When I need to ask a question, the tool has a fresh capture of my page, so my process is seamless. The answer shows up on my Mac right next to my notes, and I copy what I need without leaving GoodNotes.</p>
+
+      <h2>What it does</h2>
+      <p>The iPad plugs into the Mac and mirrors through QuickTime. Math Reader is a small local web app with two halves:</p>
+      <ul>
+        <li><strong>Left:</strong> a live view of my page, which is exactly what Claude sees.</li>
+        <li><strong>Right:</strong> a chat box. Every question I type is sent with a fresh capture of the page, so I can ask "is step 3 right?" or "why does this term cancel?" without screenshotting anything.</li>
+      </ul>
+      <p>A few other ways to use it:</p>
+      <ul>
+        <li><strong>Pressing Enter</strong> with an empty box checks the whole page.</li>
+        <li><strong>Auto-check</strong> waits until I pause writing, then checks the page by itself.</li>
+        <li><strong>New problem</strong> clears the conversation so old context doesn't pile up.</li>
+        <li>I can also paste or drop in any image instead, like a textbook page.</li>
+      </ul>
+
+      <figure class="shot">
+        <img src="img/math-reader/why-biased.webp" alt="Math Reader with handwritten lecture notes on the regression estimator, including the note that it is biased because b is correlated with x-bar. In the chat, asked why it is biased because of b, Claude takes expectations term by term: with a fixed b the estimator is unbiased, but when b is computed from the sample the bias is minus the covariance of b and x-bar, which is of order 1 over n. Claude then confirms the rest of the notes and suggests sharpening the last line." width="1877" height="1407" loading="lazy">
+        <figcaption>Asking why the regression estimator is biased. Claude works through the expectation and shows the bias comes from b being correlated with x̄.</figcaption>
+      </figure>
+
+      <figure class="shot shot--photo">
+        <img src="img/math-reader/study-setup.jpg" alt="A desk setup. A large monitor shows Math Reader: on the left, a live view of handwritten notes about Cochran's bound on bias of the ratio estimator; on the right, Claude's notes on regression estimators from Cochran chapter 7. Below, a laptop shows the textbook page on the linear regression estimate, and an iPad on the desk has the same handwritten notes in GoodNotes." width="1500" height="2000" loading="lazy">
+        <figcaption>My current setup for studying Stats 200.</figcaption>
+      </figure>
+
+    </div>
+  </main>
+
+</body>
+</html>

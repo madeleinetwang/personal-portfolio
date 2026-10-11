@@ -471,6 +471,13 @@ a.project-tile:hover {
   opacity: 1;
 }
 
+/* On phones the nav already has Projects; the extra back link just crowds the header. */
+@media (max-width: 700px) {
+  .back {
+    display: none;
+  }
+}
+
 .post-title {
   font-size: 2.5rem;
   line-height: 1.15;

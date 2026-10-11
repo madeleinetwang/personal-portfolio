@@ -17,13 +17,13 @@
 
   <main>
     <p class="back"><a href="../projects.html">← Projects</a></p>
-    <h1>My Personal Math Tutor</h1>
-    <p class="post-meta">Sharing tools I build that help me in my learning journey.</p>
+    <h1 class="post-title">My Personal Math Tutor</h1>
+    <p class="post-meta">Sharing a tool I built to help my learning journey.</p>
     <div class="post-body">
 
       <figure class="shot">
         <img src="img/math-reader/check-my-work.webp" alt="Math Reader on a Mac. On the left, a live view of a handwritten GoodNotes page for problem 6a, setting up a neural network's weight matrix and hidden units. On the right, Claude's reply lists mistakes: the hidden units are missing the sigmoid activation, with the corrected equation written out." width="2000" height="1089" loading="lazy">
-        <figcaption>Testing "Check my work" on PS2 #6a from CS229 this past summer. Claude flags to me that my hidden units are missing the sigmoid. (Claude was correct. I got marked down on this problem.)</figcaption>
+        <figcaption>Testing "Check my work" on PS2 #6a from CS229 this past summer. Claude flags that my hidden units are missing the sigmoid. (Claude was correct. I got marked down on this problem.)</figcaption>
       </figure>
 
       <h2>The process</h2>
@@ -34,15 +34,14 @@
         <figcaption><a href="https://x.com/noahlt/status/2108675665373589841">@noahlt on X</a></figcaption>
       </figure>
 
-      <p>I took the idea and turned it into my own workflow for studying.</p>
-      <p>I do all my math by hand in GoodNotes on my iPad, so my loop looked like this:</p>
+      <p>I took the idea and turned it into my own workflow for studying. I do all my math by hand in GoodNotes on my iPad, so my loop looked like this:</p>
       <ol>
         <li>Take notes or work a problem.</li>
         <li>Get stuck, then screenshot the page.</li>
         <li>Send the screenshot to Claude and type out my question.</li>
         <li>Go back to my notes and write down whatever Claude said.</li>
       </ol>
-      <p>This process was cumbersome. Every question I had meant leaving my notes and getting distracted with my multi-step process.</p>
+      <p>This process was cumbersome. Every question I had meant leaving my notes and getting distracted by the multi-step process.</p>
       <p>I built this small, quick tool to solve it! When I need to ask a question, the tool has a fresh capture of my page, so my process is seamless. The answer shows up on my Mac right next to my notes, and I copy what I need without leaving GoodNotes.</p>
 
       <h2>What it does</h2>
@@ -53,7 +52,7 @@
       </ul>
       <p>A few other ways to use it:</p>
       <ul>
-        <li><strong>Enter on an empty box</strong> checks the whole page.</li>
+        <li><strong>Pressing Enter</strong> with an empty box checks the whole page.</li>
         <li><strong>Auto-check</strong> waits until I pause writing, then checks the page by itself.</li>
         <li><strong>New problem</strong> clears the conversation so old context doesn't pile up.</li>
         <li>I can also paste or drop in any image instead, like a textbook page.</li>
@@ -64,9 +63,9 @@
         <figcaption>Asking how a corollary in Cochran goes from 7.8 to 7.9. Claude says what it's assuming, then walks through completing the square.</figcaption>
       </figure>
 
-      <figure class="shot">
-        <img src="img/math-reader/setup-question.webp" alt="Math Reader with a handwritten page for problem 4c about accuracy on a reweighted dataset with true positives, false negatives and multiplicity 1 over k. Earlier in the chat, Claude gives a chain-rule nudge and later says there are no changes since the last check. The newest question asks whether the setup is correct while Claude is thinking." width="2000" height="1093" loading="lazy">
-        <figcaption>Earlier in the chat: a chain-rule nudge, then "no changes since the last check." Now on to 4c.</figcaption>
+      <figure class="shot shot--photo">
+        <img src="img/math-reader/study-setup.jpg" alt="A desk setup. A large monitor shows Math Reader: on the left, a live view of handwritten notes about Cochran's bound on bias of the ratio estimator; on the right, Claude's notes on regression estimators from Cochran chapter 7. Below, a laptop shows the textbook page on the linear regression estimate, and an iPad on the desk has the same handwritten notes in GoodNotes." width="1500" height="2000" loading="lazy">
+        <figcaption>My current setup for studying Stats 200.</figcaption>
       </figure>
 
     </div>

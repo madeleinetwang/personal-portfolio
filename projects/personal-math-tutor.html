@@ -18,51 +18,33 @@
   <main>
     <p class="back"><a href="../projects.html">← Projects</a></p>
     <h1 class="post-title">My Personal Math Tutor</h1>
-    <p class="post-meta">Sharing a tool I built to help my learning journey.</p>
+    <p class="post-meta"><em>*all writing is my own</em></p>
     <div class="post-body">
 
-      <h2>The process</h2>
-      <p>As someone who is in grad school part time and working full time, I'm always looking for ways to maximize my learning. I can't attend office hours most days because they're during my working hours, so I have to be a <em>little</em> resourceful at times.</p>
-      <p>When I was scrolling through my timeline and saw this:</p>
+      <p>As someone who works full-time and attends school part-time, keeping up with my learning is one of my priorities outside of my busy schedule. Since I couldn't attend office hours (which were during my work hours), I wanted a way to utilize AI as a Socratic tool to enhance my understanding of difficult concepts.</p>
+      <p>While I was doom scrolling on X and procrastinating my problem set on a Tuesday night, I came across a tweet that instantly got my attention: @noahlt's math set up. It instantly inspired me! I wanted to be resourceful with the tools I already had at hand, so I pulled out my study stack essentials: my iPad, my mac, and a USB-C cord.</p>
 
       <figure class="shot shot--narrow">
         <a href="https://x.com/noahlt/status/2108675665373589841"><img src="img/math-reader/noahlt-tweet.png" alt="A post on X from Noah Tye (@noahlt): 'Lately I've been learning math with ChatGPT (Astra) as my tutor, using this document scanning camera and a vibecoded tool that pastes the captured image right into the chat. This way, I just work problems on paper and ChatGPT gives feedback. It's really nice.' The photo shows a laptop next to a document camera pointed at a notebook of handwritten math." width="408" height="478" loading="lazy"></a>
-        <figcaption><a href="https://x.com/noahlt/status/2108675665373589841">@noahlt on X</a></figcaption>
       </figure>
 
-      <p>I had an idea!</p>
-      <p>Using the skeleton of this, I turned to my own workflow to see what I could solve. I did all my math by hand in GoodNotes on my iPad, so my loop looked like this:</p>
-      <ol>
-        <li>Take notes or work a problem.</li>
-        <li>Get stuck, then screenshot the page.</li>
-        <li>Send the screenshot to Claude and type out my question.</li>
-        <li>Go back to my notes and write down whatever Claude said.</li>
-      </ol>
-      <p>This process was cumbersome. Every question I had meant leaving my notes and getting distracted by the multi-step process.</p>
-      <p>I built this small, quick tool to solve it! When I need to ask a question, the tool has a fresh capture of my page, so my process is seamless. The answer shows up on my Mac right next to my notes, and I copy what I need without leaving GoodNotes.</p>
-
-      <h2>What it does</h2>
-      <p>The iPad plugs into the Mac and mirrors through QuickTime. Math Reader is a small local web app with two halves:</p>
+      <p>If I needed help on a problem I was working through, the way my existing flow worked was clunky and often distracting. I'd be working through the problem, get confused, take a screenshot, upload that screenshot into claude on my iPad, then re-open Claude on my computer so I could put the output from my query side-by-side with my work. (So much work!) Every question I had meant leaving my notes entirely, letting my brain get side-tracked, and ultimately losing out on the learning entirely.</p>
+      <p>I got to work on Claude Code and built my own personal math tutor. Rather than going through a whole transfer process, I made it so that any model I wanted to use could see my notes live and reply to me live as I had questions.</p>
+      <p>Using QuickTime screen capture, I can hook up my iPad to my laptop with a USB-C. The tool reads this screen capture live and sits on top of. The UI is quite simple:</p>
       <ul>
-        <li><strong>Left:</strong> a live view of my page, which is exactly what Claude sees.</li>
-        <li><strong>Right:</strong> a chat box. Every question I type is sent with a fresh capture of the page, so I can ask "is step 3 right?" or "why does this term cancel?" without screenshotting anything.</li>
-      </ul>
-      <p>A few other ways to use it:</p>
-      <ul>
-        <li><strong>Pressing Enter</strong> with an empty box checks the whole page.</li>
-        <li><strong>Auto-check</strong> waits until I pause writing, then checks the page by itself.</li>
-        <li><strong>New problem</strong> clears the conversation so old context doesn't pile up.</li>
-        <li>I can also paste or drop in any image instead, like a textbook page.</li>
+        <li>Left: a live view of my page.</li>
+        <li>Right: a chat box for my questions.</li>
       </ul>
 
       <figure class="shot">
-        <img src="img/math-reader/why-biased.webp" alt="Math Reader with handwritten lecture notes on the regression estimator, including the note that it is biased because b is correlated with x-bar. In the chat, asked why it is biased because of b, Claude takes expectations term by term: with a fixed b the estimator is unbiased, but when b is computed from the sample the bias is minus the covariance of b and x-bar, which is of order 1 over n. Claude then confirms the rest of the notes and suggests sharpening the last line." width="1877" height="1407" loading="lazy">
-        <figcaption>Asking why the regression estimator is biased. Claude works through the expectation and shows the bias comes from b being correlated with x̄.</figcaption>
+        <img src="img/math-reader/why-biased.webp" alt="The math tutor tool. On the left, a live view of handwritten lecture notes on the regression estimator. On the right, a chat where the question 'why is it biased bc of b?' is answered step by step, showing the bias comes from b being correlated with x-bar." width="1877" height="1407" loading="lazy">
       </figure>
 
+      <p>Truthfully, I left the inner workings I left up to Claude code, however, a neat takeaway I learned from this was the ease of building useful tools instantaneously. I see AI tooling as a means to make difficult things our world has engineered, ever-so-slightly easier and within reach to every person. Technology and engineering is a superpower not every person was privileged to study, so the gift of being able to build tools to enhance your daily workflows is amazing to me! This thread by @noahlt inspired many people, replying with their own setups allowing them to rediscover their childhood love for subjects they never really had the time to carve out to learn independently, without the shame of not knowing simple concepts or the means to find a resource who can answer them on their busy schedules.</p>
+      <p>I often find myself thinking that this is a careful line to toe. Because we have this affirmative tool in front of us, it is easy to avoid relying on other humans at all. While this tool helped me get through my problem sets, ultimately, the feeling of working and learning alongside other humans is unbeatable. This tool is a good substitute for the nights I'm working late and no TA is around to help, but sitting around the study lounge cramming with my classmates right before a midterm and struggling through difficult problems together is a different gratification than instantly understanding a model's output, tailor-made for your style of learning.</p>
+
       <figure class="shot shot--photo">
-        <img src="img/math-reader/study-setup.jpg" alt="A desk setup. A large monitor shows Math Reader: on the left, a live view of handwritten notes about Cochran's bound on bias of the ratio estimator; on the right, Claude's notes on regression estimators from Cochran chapter 7. Below, a laptop shows the textbook page on the linear regression estimate, and an iPad on the desk has the same handwritten notes in GoodNotes." width="1500" height="2000" loading="lazy">
-        <figcaption>My current setup for studying Stats 200.</figcaption>
+        <img src="img/math-reader/study-setup.jpg" alt="A desk setup. A large monitor shows the math tutor tool with handwritten notes on the left and Claude's notes on regression estimators on the right. Below, a laptop shows a textbook page, and an iPad on the desk has the same handwritten notes in GoodNotes." width="1500" height="2000" loading="lazy">
       </figure>
 
     </div>
